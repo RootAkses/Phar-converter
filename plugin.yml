@@ -1,0 +1,17 @@
+name: PharConverter
+main: PharConverter\Main
+version: 1.0.0
+api: [2.0.0]
+author: Alvaro
+description: Convert PHAR and ZIP files
+
+commands:
+  pharconvert:
+    description: Convert PHAR and ZIP files
+    usage: "/pharconvert <phar2zip|zip2phar> <file>"
+    permission: pharconverter.use
+
+permissions:
+  pharconverter.use:
+    description: Allows using PharConverter
+    default: op
